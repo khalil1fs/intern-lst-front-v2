@@ -13,11 +13,11 @@ import { ComponentsModule } from './components/components.module';
 // import { ExamplesModule } from './examples/examples.module';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterComponent } from './register/register.component';
-import { PanierComponent } from './module/client/view/panier/panier.component';
+// import { PanierComponent } from './module/client/view/panier/panier.component';
 // import { CheckoutComponent } from './checkout/checkout.component';
-import { ProductsComponent } from './module/client/view/products/products.component';
-import { ProductCreateComponent } from './module/client/view/products/product-create/product-create.component';
-import { ProductListComponent } from './module/client/view/products/product-list/product-list.component';
+// import { ProductsComponent } from './module/client/view/products/products.component';
+// import { ProductCreateComponent } from './module/client/view/products/product-create/product-create.component';
+// import { ProductListComponent } from './module/client/view/products/product-list/product-list.component';
 import { AuthComponent } from './auth/auth.component';
 import { DemoComponent } from './demo/demo.component';
 // import { PagesComponent } from './pages/pages.component';
@@ -29,6 +29,9 @@ import { DemoComponent } from './demo/demo.component';
 // import { AdminComponent } from './module/admin/admin.component';
 // import { VisitorComponent } from './module/visitor/visitor.component';
 import { ViewComponent } from './module/admin/view/view.component';
+import { FormationComponent } from './module/client/view/formation/formation.component';
+import { ProduitBioComponent } from './module/client/view/produit-bio/produit-bio.component';
+import { CongresComponent } from './module/client/view/congres/congres.component';
 
 
 
@@ -39,11 +42,11 @@ import { ViewComponent } from './module/admin/view/view.component';
     FooterComponent,
     LoginPageComponent,
     RegisterComponent,
-    PanierComponent,
+    // PanierComponent,
     // CheckoutComponent,
-    ProductsComponent,
-    ProductListComponent,
-    ProductCreateComponent,
+    // ProductsComponent,
+    // ProductListComponent,
+    // ProductCreateComponent,
     AuthComponent,
     DemoComponent,
     // PagesComponent,
@@ -52,7 +55,10 @@ import { ViewComponent } from './module/admin/view/view.component';
     // ClientComponent,
     // AdminComponent,
     // VisitorComponent,
-    ViewComponent
+    ViewComponent,
+    FormationComponent,
+    ProduitBioComponent,
+    CongresComponent
   ],
   imports: [
     BrowserModule,
