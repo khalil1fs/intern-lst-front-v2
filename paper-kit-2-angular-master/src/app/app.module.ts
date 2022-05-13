@@ -13,21 +13,21 @@ import { ComponentsModule } from './components/components.module';
 // import { ExamplesModule } from './examples/examples.module';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterComponent } from './register/register.component';
-import { PanierComponent } from './panier/panier.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { ProductsComponent } from './products/products.component';
-import { ProductCreateComponent } from './products/product-create/product-create.component';
-import { ProductListComponent } from './products/product-list/product-list.component';
+import { PanierComponent } from './module/client/view/panier/panier.component';
+// import { CheckoutComponent } from './checkout/checkout.component';
+import { ProductsComponent } from './module/client/view/products/products.component';
+import { ProductCreateComponent } from './module/client/view/products/product-create/product-create.component';
+import { ProductListComponent } from './module/client/view/products/product-list/product-list.component';
 import { AuthComponent } from './auth/auth.component';
 import { DemoComponent } from './demo/demo.component';
-import { PagesComponent } from './pages/pages.component';
-import { UtilsComponent } from './utils/utils.component';
-import { ModuleComponent } from './module/module.component';
+// import { PagesComponent } from './pages/pages.component';
+// import { UtilsComponent } from './utils/utils.component';
+// import { ModuleComponent } from './module/module.component';
 
 
-import { ClientComponent } from './module/client/client.component';
-import { AdminComponent } from './module/admin/admin.component';
-import { VisitorComponent } from './module/visitor/visitor.component';
+// import { ClientComponent } from './module/client/client.component';
+// import { AdminComponent } from './module/admin/admin.component';
+// import { VisitorComponent } from './module/visitor/visitor.component';
 import { ViewComponent } from './module/admin/view/view.component';
 
 
@@ -40,18 +40,18 @@ import { ViewComponent } from './module/admin/view/view.component';
     LoginPageComponent,
     RegisterComponent,
     PanierComponent,
-    CheckoutComponent,
+    // CheckoutComponent,
     ProductsComponent,
     ProductListComponent,
     ProductCreateComponent,
     AuthComponent,
     DemoComponent,
-    PagesComponent,
-    UtilsComponent,
-    ModuleComponent,
-    ClientComponent,
-    AdminComponent,
-    VisitorComponent,
+    // PagesComponent,
+    // UtilsComponent,
+    // ModuleComponent,
+    // ClientComponent,
+    // AdminComponent,
+    // VisitorComponent,
     ViewComponent
   ],
   imports: [
