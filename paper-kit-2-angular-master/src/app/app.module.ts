@@ -32,6 +32,8 @@ import { ViewComponent } from './module/admin/view/view.component';
 import { FormationComponent } from './module/client/view/formation/formation.component';
 import { ProduitBioComponent } from './module/client/view/produit-bio/produit-bio.component';
 import { CongresComponent } from './module/client/view/congres/congres.component';
+// import { PanierModel } from './module/client/view/panier/panier.model';
+import { PanierComponent } from './module/client/view/panier/panier.component';
 
 
 
@@ -58,7 +60,9 @@ import { CongresComponent } from './module/client/view/congres/congres.component
     ViewComponent,
     FormationComponent,
     ProduitBioComponent,
-    CongresComponent
+    CongresComponent,
+    // PanierModel,
+    PanierComponent
   ],
   imports: [
     BrowserModule,
