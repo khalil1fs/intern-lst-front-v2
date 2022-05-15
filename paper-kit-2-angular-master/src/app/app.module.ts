@@ -28,7 +28,7 @@ import { DemoComponent } from './demo/demo.component';
 // import { ClientComponent } from './module/client/client.component';
 // import { AdminComponent } from './module/admin/admin.component';
 // import { VisitorComponent } from './module/visitor/visitor.component';
-import { ViewComponent } from './module/admin/view/view.component';
+// import { ViewComponent } from './module/admin/view/view.component';
 import { FormationComponent } from './module/client/view/formation/formation.component';
 import { ProduitBioComponent } from './module/client/view/produit-bio/produit-bio.component';
 import { CongresComponent } from './module/client/view/congres/congres.component';
@@ -57,7 +57,7 @@ import { PanierComponent } from './module/client/view/panier/panier.component';
     // ClientComponent,
     // AdminComponent,
     // VisitorComponent,
-    ViewComponent,
+    // /ViewComponent,
     FormationComponent,
     ProduitBioComponent,
     CongresComponent,
