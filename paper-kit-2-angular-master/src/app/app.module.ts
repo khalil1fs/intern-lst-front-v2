@@ -34,6 +34,7 @@ import { ProduitBioComponent } from './module/client/view/produit-bio/produit-bi
 import { CongresComponent } from './module/client/view/congres/congres.component';
 // import { PanierModel } from './module/client/view/panier/panier.model';
 import { PanierComponent } from './module/client/view/panier/panier.component';
+import { CheckoutComponent } from './module/client/view/checkout/checkout.component';
 
 
 
@@ -62,7 +63,8 @@ import { PanierComponent } from './module/client/view/panier/panier.component';
     ProduitBioComponent,
     CongresComponent,
     // PanierModel,
-    PanierComponent
+    PanierComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

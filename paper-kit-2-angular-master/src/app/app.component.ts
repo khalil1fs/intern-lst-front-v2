@@ -61,6 +61,7 @@ export class AppComponent implements OnInit {
         }
     }
 
+
     isLogin() {
         var titlee = this.location.prepareExternalUrl(this.location.path());
         if(titlee.charAt(0) === '#') {
@@ -103,6 +104,29 @@ export class AppComponent implements OnInit {
         }
         return titlee === '/product-create';
     }
+
+    isCheckout() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/checkout';
+    }
+
+    isFormation() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/formation';
+    }
+
+    isCongres() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/congres';    }
 }
 
 

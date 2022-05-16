@@ -122,11 +122,13 @@
 }
 
 .card-register {
-  background-color: #FF8F5E;
+  background-color: black;
   border-radius: 8px;
   color: #fff;
-  max-width: 350px;
-  margin: 120px 0 70px;
+  max-width: 100%;
+  margin: 90px 0px 0px;
+  //  margin-top: 20px;
+  //  padding-top: 300px;
   min-height: 400px;
   padding: 30px;
   z-index: 1;

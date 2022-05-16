@@ -71,4 +71,66 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+
+    isindex() {
+    var titlee = this.location.prepareExternalUrl(this.location.path());
+    if(titlee.charAt(0) === '#') {
+        titlee = titlee.slice( 1 );
+    }
+    return titlee === '/home';
+}
+
+    islogin() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/login';
+    }
+
+    isMateriel() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/products';
+    }
+
+    isRegister() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/register';
+    }
+
+    isCheckout() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/checkout';
+    }
+
+    isPanier() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/panier';
+    }
+
+    isFormation() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/formation';    }
+
+    isCongres() {
+        var titlee = this.location.prepareExternalUrl(this.location.path());
+        if(titlee.charAt(0) === '#') {
+            titlee = titlee.slice( 1 );
+        }
+        return titlee === '/congres';    }
 }

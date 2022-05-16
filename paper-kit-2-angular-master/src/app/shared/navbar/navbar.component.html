@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
+<nav class="navbar navbar-expand-lg  fixed-top navbar-transparent justify-content-center" color-on-scroll="500">
     <div class="container">
-        <div class="navbar-translate">
-            <a class="navbar-brand" >Nano planete</a>
+        <div class="navbar-translate col-sm-0">
+            <a class="navbar-brand " >Nano <span style="color: #00bbff">planete</span></a>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -30,8 +30,8 @@
 <!--                    </a>-->
 <!--                </li>-->
 
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a  [routerLink]="['/home']" class="nav-link" style="font-size: 10px"><i class="fa fa-home" aria-hidden="true"></i>
+                <li class="nav-item " *ngIf="!isindex()">
+                    <a  [routerLink]="['/home']" class="nav-link" style="font-size: 10px"><i style="font-size: 15px" class="fa fa-home" aria-hidden="true"></i>
                         Accueil</a>
                 </li>
 
@@ -41,36 +41,41 @@
 <!--                </li>-->
 
 
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a  class="nav-link" style="font-size: 10px" ><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <li class="nav-item " *ngIf="!isFormation()">
+                    <a [routerLink]="['/formation']" class="nav-link"  ><i style="font-size: 15px" class="fa fa-graduation-cap" aria-hidden="true"></i>
                         Formation</a>
                 </li>
 
-
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a  class="nav-link"  style="font-size: 10px">Congres & seminaires</a>
+                <li class="nav-item " *ngIf="!isDocumentation()">
+                    <a  class="nav-link" style="font-size: 10px" ><i style="font-size: 15px" class="fa fa-plane" aria-hidden="true"></i>
+                        Etude a l'étranger</a>
                 </li>
 
 
-                <li class="nav-item" *ngIf="!isDocumentation()">
+                <li class="nav-item " *ngIf="!isCongres()">
+                    <a [routerLink]="['/congres']" class="nav-link"  style="font-size: 10px">Congres & seminaires</a>
+                </li>
+
+
+                <li class="nav-item " *ngIf="!isMateriel()">
                     <a [routerLink]="['/products']" class="nav-link"  style="font-size: 10px">Materiel Biomedical</a>
                 </li>
 
 
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a  class="nav-link" href="https://api.whatsapp.com/send?phone=212632360909&text=welcome%20to%20nano%20planete" style="font-size: 10px"><i class="fa fa-phone" aria-hidden="true"></i>
+                <li class="nav-item " *ngIf="!isDocumentation()">
+                    <a  class="nav-link" href="https://api.whatsapp.com/send?phone=212632360909&text=welcome%20to%20nano%20planete" style="font-size: 10px"><i style="font-size: 15px" class="fa fa-phone" aria-hidden="true"></i>
                         Contact</a>
                 </li>
 
 
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a [routerLink]="['/login']" class="nav-link" style="font-size: 10px"><i class="fa fa-user" aria-hidden="true"></i>
+                <li class="nav-item " *ngIf="!islogin() && !isRegister() ">
+                    <a [routerLink]="['/login']" class="nav-link" style="font-size: 10px"><i style="font-size: 15px" class="fa fa-user" aria-hidden="true"></i>
                         Login</a>
                 </li>
 
 
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a [routerLink]="['/panier']" class="nav-link" style="font-size: 10px"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <li class="nav-item " *ngIf="!isCheckout() && !isPanier()">
+                    <a [routerLink]="['/panier']" class="nav-link" style="font-size: 10px"><i style="font-size: 15px" class="fa fa-shopping-cart" aria-hidden="true"></i>
                         Panier</a>
                 </li>
 
