@@ -15,6 +15,7 @@ import {ProduitBioComponent} from './module/client/view/produit-bio/produit-bio.
 import {CheckoutComponent} from "./module/client/view/checkout/checkout.component";
 import {FormationComponent} from "./module/client/view/formation/formation.component";
 import {CongresComponent} from "./module/client/view/congres/congres.component";
+import {OverseaeducationComponent} from "./module/client/view/overseaeducation/overseaeducation.component";
 // import {AdminComponent} from './module/admin/admin.component';
 // import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 
@@ -30,6 +31,7 @@ const routes: Routes =[
     // { path: 'module',          component: ViewComponent },
     { path: 'register',          component: RegisterComponent },
     { path: 'congres',          component: CongresComponent },
+    { path: 'overseaeducation',          component: OverseaeducationComponent },
 
 ];
 

@@ -35,6 +35,7 @@ import { CongresComponent } from './module/client/view/congres/congres.component
 // import { PanierModel } from './module/client/view/panier/panier.model';
 import { PanierComponent } from './module/client/view/panier/panier.component';
 import { CheckoutComponent } from './module/client/view/checkout/checkout.component';
+import { OverseaeducationComponent } from './module/client/view/overseaeducation/overseaeducation.component';
 
 
 
@@ -64,7 +65,8 @@ import { CheckoutComponent } from './module/client/view/checkout/checkout.compon
     CongresComponent,
     // PanierModel,
     PanierComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    OverseaeducationComponent
   ],
   imports: [
     BrowserModule,
