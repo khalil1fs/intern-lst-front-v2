@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
@@ -12,10 +12,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ComponentsModule } from './components/components.module';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterComponent } from './register/register.component';
-import { DemoComponent } from './demo/demo.component';
 import { FormationComponent } from './module/client/view/formation/formation.component';
 import { ProduitBioComponent } from './module/client/view/produit-bio/produit-bio.component';
 import { CongresComponent } from './module/client/view/congres/congres.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -27,13 +27,14 @@ import { CongresComponent } from './module/client/view/congres/congres.component
     FooterComponent,
     LoginPageComponent,
     RegisterComponent,
-    DemoComponent,
     FormationComponent,
     ProduitBioComponent,
     CongresComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
+    HttpClientModule,
     NgbModule,
     FormsModule,
     RouterModule,

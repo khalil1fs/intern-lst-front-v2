@@ -2,7 +2,6 @@ import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
-import {Role} from '../model/Role.model';
 import {User} from '../model/User.model';
 import {TokenService} from './Token.service';
 import {environment} from '../../../environments/environment';
@@ -68,11 +67,11 @@ export class AuthService {
 
     lolo;
 
-    public registerAdmin() {
+    public register() {
         console.log(this.user);
         this.http.post<any>(this.API + 'register/', this.user, {observe: 'response'}).subscribe(
             resp => {
-                this.router.navigate(['admin/login']);
+                this.router.navigate(['/home']);
             }, (error: HttpErrorResponse) => {
                 console.log(error.error);
             }

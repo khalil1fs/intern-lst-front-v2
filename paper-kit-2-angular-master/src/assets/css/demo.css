@@ -1631,7 +1631,8 @@ footer {
 
 
 .payment-info {
-    background: blue;
+    background: black;
+    opacity: 0.9;
     padding: 10px;
     border-radius: 6px;
     color: #fff;
@@ -1689,19 +1690,19 @@ label.radio span {
 
 label.radio input:checked + span {
     border-color: #fff;
-    background-color: blue;
+    background-color: #00bbff;
     color: #fff;
 }
 
 .credit-inputs {
-    background: rgb(102,102,221);
-    color: #fff !important;
-    border-color: rgb(102,102,221);
+    background: white;
+    color: black!important;
+    border-color: black;
 }
 
 .credit-inputs::placeholder {
-    color: #fff;
-    font-size: 13px;
+    color: black;
+    font-size: 15px;
 }
 
 .credit-card-label {
@@ -1710,7 +1711,7 @@ label.radio input:checked + span {
 }
 
 .form-control.credit-inputs:focus {
-    background: rgb(102,102,221);
+    background: whitesmoke;
     border: rgb(102,102,221);
 }
 
